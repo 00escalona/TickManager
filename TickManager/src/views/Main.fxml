@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="root" stylesheets="@estilo-oscuro.css" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainController">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="Inicio">
+            <items>
+              <MenuItem fx:id="menuAdmin" mnemonicParsing="false" onAction="#mostrarVistaMain" text="Tickado" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Panel de Administración">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#mostrarLogin" text="Acceso Administrador" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Ayuda">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#mostrarAyuda" text="Sobre..." />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TableView id="tablaTrabajadores" fx:id="tablaTrabajadores" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="columnaNombre" prefWidth="75.0" text="Nombre" />
+          <TableColumn fx:id="columnaHoraEntrada" prefWidth="123.0" text="Hora de Entrada" />
+        </columns>
+      </TableView>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+         <children>
+            <TextField id="campoCodigo" fx:id="campoCodigo" onAction="#registrarEntradaSalida" />
+            <Button id="btnRegistrar" fx:id="btnRegistrar" mnemonicParsing="false" onAction="#registrarEntradaSalida" text="ENTRADA/SALIDA" />
+         </children>
+      </HBox>
+   </children>
+   <effect>
+      <InnerShadow blurType="ONE_PASS_BOX" />
+   </effect>
+</VBox>
