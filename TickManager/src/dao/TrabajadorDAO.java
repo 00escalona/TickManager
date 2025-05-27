@@ -1,9 +1,10 @@
 package dao;
 
-import database.Database;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+
+import resources.Database;
 
 public class TrabajadorDAO {
 

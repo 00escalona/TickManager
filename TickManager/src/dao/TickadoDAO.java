@@ -1,11 +1,11 @@
 package dao;
 
 import models.Trabajador;
+import resources.Database;
+
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
-
-import database.Database;
 
 public class TickadoDAO {
     

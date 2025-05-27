@@ -1,11 +1,11 @@
 package application;
 
-import database.Database;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import resources.Database;
 
 public class Main extends Application {
     @Override

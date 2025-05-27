@@ -1,7 +1,6 @@
 package controllers;
 
 import dao.TrabajadorDAO;
-import database.Database;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -10,6 +9,7 @@ import javafx.stage.FileChooser;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import models.Trabajador;
+import resources.Database;
 
 import com.opencsv.CSVWriter;
 
