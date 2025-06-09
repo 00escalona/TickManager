@@ -32,8 +32,6 @@
     		<PasswordField fx:id="campoContrasena" GridPane.columnIndex="1" GridPane.rowIndex="1" />
 
     		<Button onAction="#iniciarSesion" text="Iniciar Sesión" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-
-    		<Button onAction="#mostrarRegistro" text="Crear Cuenta" GridPane.columnIndex="1" GridPane.rowIndex="3" />
          </children>
       </GridPane>
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
